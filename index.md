@@ -4,20 +4,25 @@ A SDL2/GLEW frontend for MelonDS I created in March 2021, compiled through Emscr
 
 
 ## Controls
+<table>
+<tr><td>A:</td><td>X</td></tr>
 
-A: X
+<tr><td>B:</td><td>Z</td></tr>
 
-B: Z
+<tr><td>X:</td><td>S</td></tr>
 
-X: S
+<tr><td>Y:</td><td>A</td></tr>
 
-Y: A
+<tr><td>L:</td><td>Q</td></tr>
 
-L: Q
+<tr><td>R:</td><td>W</td></tr>
 
-R: W
+<tr><td>D-pad:</td><td>Arrow Keys</td></tr>
 
-D-pad: Arrow Keys
+<tr><td>Select:</td><td>Right Shift</td></tr>
+
+<tr><td>Start:</td><td>Enter</td></tr>
+</table>
 
 <div id="needed" style="display:block;">
     Please upload the required files (they will be cached by your browser):
@@ -48,8 +53,6 @@ D-pad: Arrow Keys
 			</td>
 		</tr>
 	</table>
-
-	Controls:
 	<table>
 		<tr>
 			<td>
@@ -118,8 +121,8 @@ D-pad: Arrow Keys
 	</table>
 </div>
 <div class="emscripten"><progress id="progress" max="1" value="0" hidden=""></progress></div>
-<div class="emscripten_border">
-	<canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" tabindex="-1" width="650" height="580" style="cursor: default;"></canvas>
+<div class="emscripten_border" style="display: flex; justify-content: center;">
+	<canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" tabindex="-1" width="650" height="580" style="cursor: default; margin: auto; display: block;"></canvas>
 </div>
 <script>
 var statusElement=document.getElementById("status"),progressElement=document.getElementById("progress"),spinnerElement=document.getElementById("spinner"),
