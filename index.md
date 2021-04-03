@@ -49,18 +49,18 @@ D-pad: Arrow Keys
 		</tr>
 	</table>
 
-	Screen Controls:
+	Controls:
 	<table>
 		<tr>
-			<!-- <td>
+			<td>
 				Screen Size:
 				<select id="size">
 					<option value="1x">1x</option>
-					<option value="2x">2x</option>
+					<option value="2x" selected>2x</option>
 					<option value="3x">3x</option>
 					<option value="4x">4x</option>
 				</select>
-			</td> -->
+			</td>
 			<td>
 				Screen Rotation:
 				<select id="rotation">
@@ -90,6 +90,13 @@ D-pad: Arrow Keys
 				</select>
 			</td>
 			<td>
+				Screen Filtering:
+				<select id="filtering">
+					<option value="nearest">Nearest</option>
+					<option value="linear" selected>Linear</option>
+				</select>
+			</td>
+			<!-- <td>
 				Screen Sizing:
 				<select id="sizing">
 					<option value="even">Even</option>
@@ -97,10 +104,15 @@ D-pad: Arrow Keys
 					<option value="bottom">Emphasize Bottom</option>
 					<option value="auto">Auto</option>
 				</select>
-			</td>
+			</td> -->
 			<td>
 				Swap Screens:
 				<input type="checkbox" id="swap" value="swap">
+			</td>
+
+			<td>
+				Volume:
+				<input type="range" min="0" max="256" value="256" id="volume">
 			</td>
 		</tr>
 	</table>
