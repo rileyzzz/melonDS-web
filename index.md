@@ -24,6 +24,8 @@ A SDL2/GLEW frontend for MelonDS I created in March 2021, compiled through Emscr
 <tr><td>Start:</td><td>Enter</td></tr>
 </table>
 
+
+
 <div id="needed" style="display:block;">
     Please upload the required files (they will be cached by your browser):
     <table id="requirelist">
